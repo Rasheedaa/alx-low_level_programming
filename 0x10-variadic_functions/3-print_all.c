@@ -5,6 +5,7 @@
 /**
  * print_all - prints anything.
  * @format: list of all arguments passedto the function.
+ *
  * Return: void.
  */
 void print_all(const char * const format, ...)
@@ -18,7 +19,7 @@ void print_all(const char * const format, ...)
 	separator = "";
 
 	i = 0;
-	while (format && format [i])
+	while (format && format[i])
 	{
 		switch (format[i])
 		{
@@ -41,7 +42,7 @@ void print_all(const char * const format, ...)
 				i++;
 				continue;
 		}
-		separator = ",";
+		separator = ", ";
 		i++;
 	}
 
